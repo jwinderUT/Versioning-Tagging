@@ -6,6 +6,10 @@ def calculate(operation, a, b):
     elif operation == 'multiply':
         return a * b
     elif operation == 'divide':
+        try: 
+            a / b
+        except ZeroDivisionError:
+            return("Exception: Cannot divide by 0.")
         return a / b
     else:
         return "Error: Unsupported operation"
