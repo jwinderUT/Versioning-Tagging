@@ -11,6 +11,8 @@ def calculate(operation, a, b):
         except ZeroDivisionError:
             return("Exception: Cannot divide by 0.")
         return a / b
+    elif operation == 'average':
+        return (a + b) / 2
     else:
         return "Error: Unsupported operation"
 
