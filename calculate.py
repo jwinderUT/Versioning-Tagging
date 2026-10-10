@@ -14,6 +14,11 @@ def calculate(operation, a, b):
     elif operation == 'average':
         x = (a + b) / 2
         print(x)
+    elif operation == "log":
+        x = math.log(a, b)
+        print(x)
+    else:
+        print("Error: Unsupported operation")
 
 # Example usage
 if __name__ == "__main__":
