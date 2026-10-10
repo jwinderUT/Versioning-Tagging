@@ -1,8 +1,5 @@
 def calculate(operation, a, b):
-    if operation == 'add':
-        x = (a + b)
-        print(x)
-    elif operation == 'subtract':
+    if operation == 'subtract':
         x = (a - b)
         print(x)
     elif operation == 'multiply':
@@ -17,8 +14,6 @@ def calculate(operation, a, b):
     elif operation == 'average':
         x = (a + b) / 2
         print(x)
-    else:
-        print("Error: Unsupported operation")
 
 # Example usage
 if __name__ == "__main__":
