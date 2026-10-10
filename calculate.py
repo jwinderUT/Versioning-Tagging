@@ -1,25 +1,29 @@
 def calculate(operation, a, b):
     if operation == 'add':
-        return a + b
+        x = (a + b)
+        print(x)
     elif operation == 'subtract':
-        return a - b
+        x = (a - b)
+        print(x)
     elif operation == 'multiply':
-        return a * b
+        x = (a * b)
+        print(x)
     elif operation == 'divide':
-        try: 
-            a / b
-        except ZeroDivisionError:
-            return("Exception: Cannot divide by 0.")
-        return a / b
+        if b == 0:
+            print("Exception: Cannot divide by 0.")
+        else:
+            x = (a / b)
+            print(x)
     elif operation == 'average':
-        return (a + b) / 2
+        x = (a + b) / 2
+        print(x)
     else:
-        return "Error: Unsupported operation"
+        print("Error: Unsupported operation")
 
 # Example usage
 if __name__ == "__main__":
-    print(calculate('add', 5, 3))        # Output: 8
-    print(calculate('subtract', 5, 3))   # Output: 2
-    print(calculate('multiply', 5, 3))   # Output: 15
-    print(calculate('divide', 5, 3))     # Output: 1.666...
-    print(calculate('divide', 5, 0))     # Error
+    calculate('add', 5, 3)        # Output: 8
+    calculate('subtract', 5, 3)   # Output: 2
+    calculate('multiply', 5, 3)   # Output: 15
+    calculate('divide', 5, 3)     # Output: 1.666...
+    calculate('divide', 5, 0)     # Error
