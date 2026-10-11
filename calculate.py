@@ -1,21 +1,21 @@
 import math
 def calculate(operation, a, b):
-    if operation == 'subtract':
+    if operation in ['subtract', 'minus', '-']:
         x = (a - b)
         print(x)
-    elif operation == 'multiply':
+    elif operation in ['multiply', 'times', '*']:
         x = (a * b)
         print(x)
-    elif operation == 'divide':
+    elif operation in ['divide', 'by', '/']:
         if b == 0:
             print("Exception: Cannot divide by 0.")
         else:
             x = (a / b)
             print(x)
-    elif operation == 'average':
+    elif operation in ['average', 'mean']:
         x = (a + b) / 2
         print(x)
-    elif operation == "log":
+    elif operation in ["log", 'logarithm', 'logarighm']:
         x = math.log(a, b)
         print(x)
     else:
